@@ -36,4 +36,16 @@ public class MyQueue<E> {
             this.tail = newNode;
         }
     }
+/**
+ * This method removes head & make
+ * next node of head as new head
+ *
+ * @return No return
+ */
+    public void dequeue(){
+        //storing next node of head into temp node
+        INode tempNode = this.head.getNext();
+        //setting temp node as new node
+        this.head = tempNode;
+    }
 }
